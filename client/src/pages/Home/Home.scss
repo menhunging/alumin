@@ -1,0 +1,107 @@
+.home {
+  display: grid;
+  grid-template-columns: 100px 250px 1fr;
+  width: 100%;
+  height: 100vh;
+  max-width: 1920px;
+  gap: 10px;
+  padding: 20px;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.home__side {
+  border-radius: 10px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  min-height: 0;
+}
+
+.home__controls {
+  margin-top: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+}
+
+.home__controls .ui-button {
+  width: 44px;
+  height: 44px;
+  padding: 0;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  position: relative;
+
+  &::after {
+    content: attr(data-title);
+    position: absolute;
+    left: 50%;
+    bottom: -10px;
+    transform: translateX(-50%);
+    white-space: nowrap;
+    pointer-events: none;
+    background: #1f2328;
+    color: #fff;
+    font-size: 12px;
+    line-height: 1;
+    padding: 6px 8px;
+    border-radius: 6px;
+    opacity: 0;
+    transition: opacity 0.15s ease;
+  }
+
+  &:hover {
+    &::after {
+      opacity: 1;
+    }
+  }
+}
+
+.listClubs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.centerSide,
+.rightSide {
+  overflow: hidden;
+}
+
+.home__controls-title {
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+  border-radius: 50%;
+  color: #000;
+}
+
+.home__controls-button {
+  width: 60px;
+  height: 60px;
+}
+
+.centerSide {
+  padding: 0;
+}
+
+
+
+.home__title {
+  font-size: 18px;
+  font-weight: 600;
+  color: #fff;
+  padding: 10px 10px;
+}
+
+.chanell {
+  margin-bottom: 20px;
+}
+

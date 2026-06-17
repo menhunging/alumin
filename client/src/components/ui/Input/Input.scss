@@ -1,0 +1,22 @@
+.ui-input {
+  width: 100%;
+  padding: 12px 14px;
+  border: 1px solid #d0d7de;
+  border-radius: 10px;
+  background-color: #ffffff;
+  color: #1f2328;
+  font-size: 15px;
+  line-height: 1.2;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+  box-sizing: border-box;
+}
+
+.ui-input::placeholder {
+  color: #8c959f;
+}
+
+.ui-input:focus {
+  outline: none;
+  border-color: #0969da;
+  box-shadow: 0 0 0 3px rgba(9, 105, 218, 0.18);
+}

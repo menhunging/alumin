@@ -1,0 +1,23 @@
+[
+  {
+    "id": 1,
+    "login": "admin",
+    "password": "admin",
+    "clubsIDs": [1],
+    "managerClubIDs": [1]
+  },
+  {
+    "id": 2,
+    "login": "men",
+    "password": "123456",
+    "clubsIDs": [1, 2],
+    "managerClubIDs": [1, 2]
+  },
+  {
+    "id": 3,
+    "login": "igor",
+    "password": "12345",
+    "clubsIDs": [1, 2],
+    "managerClubIDs": []
+  }
+]

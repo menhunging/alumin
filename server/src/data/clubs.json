@@ -1,0 +1,16 @@
+[
+  {
+    "id": 1,
+    "name": "Fouro",
+    "shortName": "F",
+    "userIds": [1, 2, 3],
+    "managerIds": [1, 2]
+  },
+  {
+    "id": 2,
+    "name": "Демо клуб",
+    "shortName": "DM",
+    "userIds": [2, 3],
+    "managerIds": [2]
+  }
+]
