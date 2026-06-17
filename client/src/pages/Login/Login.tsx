@@ -25,9 +25,14 @@ const Login = () => {
     setErrorMessage(null);
 
     try {
-      const response = await api.post("/login", data);
+      const response = await api.post("/auth/login", data);
       const user = response.data?.user as
-        | { id: number; login: string; clubsIDs: number[]; managerClubIDs: number[] }
+        | {
+            id: number;
+            login: string;
+            clubsIDs: number[];
+            managerClubIDs: number[];
+          }
         | undefined;
 
       if (user) {
